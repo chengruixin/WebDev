@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Score Keeper</title>
+</head>
+<body>
+	<h1><span>0</span> to <span>0</span></h1>
+
+	<p>Playing to: 5</p>
+
+	<p>
+		<input type="number" name="ScorePoint" >
+
+		<button>Player One</button>
+		<button>Player Two</button>
+		<button>Reset</button>
+	</p>
+
+	
+
+	<script type="text/javascript">
+		var playerOne_point = 0;
+		var playerTwo_point = 0;
+		var scoreTo = 5;
+		var gameOver = false;
+
+		var scoreBoard = document.querySelector("h1");
+
+		var span1 = document.getElementsByTagName("span")[0];
+		var span2 = document.getElementsByTagName("span")[1];
+
+		var scoreToDisplay = document.querySelector("p");
+		var setScore = document.querySelector("input");
+		var playerOne_button = document.getElementsByTagName("button")[0];
+		var playerTwo_button = document.getElementsByTagName("button")[1];
+		
+
+		playerOne_button.addEventListener("click",function(){
+			if(!gameOver){
+				playerOne_point++;
+				span1.innerHTML = playerOne_point;
+
+				if (playerOne_point >= scoreTo) {
+					gameOver = true;
+					span1.style.color = "green";
+
+				}
+			}
+			
+		});
+
+		playerTwo_button.addEventListener("click",function(){
+			if(!gameOver){
+				playerTwo_point++;
+				span2.innerHTML = playerTwo_point;
+
+				if (playerTwo_point >= scoreTo) {
+					gameOver = true;
+					span2.style.color = "green";
+
+				}
+			}
+		});
+
+		document.getElementsByTagName("button")[2].addEventListener("click",function(){
+			gameOver = false;
+			playerOne_point = 0;
+			playerTwo_point = 0;
+			span1.innerHTML = playerOne_point;
+			span2.innerHTML = playerTwo_point;
+			span1.style.color = "black";
+			span2.style.color = "black";
+
+		});
+
+		// update_button.addEventListener("click",function(){
+		// 	if(setScore.value !== ""){
+		// 		scoreTo = setScore.value;
+		// 		scoreToDisplay.innerHTML = "Playing to: " + setScore.value;
+		// 	}
+			
+			
+		// });
+
+		//alt: setScore.addEventListener("change",function(){
+		setScore.addEventListener("input",function(){
+			if(setScore.value !== ""){
+				scoreTo = Number(setScore.value);
+				scoreToDisplay.innerHTML = "Playing to: " + setScore.value;
+			}
+			
+			
+		});
+		
+
+
+
+	</script>
+</body>
+</html>

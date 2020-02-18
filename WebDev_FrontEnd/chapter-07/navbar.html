@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nav Bar</title>
+
+	<style type="text/css">
+		
+		nav {
+    		border: 1px solid black;
+		}
+
+		.crumbs ol {
+    		list-style-type: none;
+    		padding-left: 0;
+		}
+
+		.crumb {
+    		display: inline-block;
+		}
+		.crumb a::after {
+		    display: inline-block;
+		    color: #000;
+		    content: '>>>';
+		    font-size: 100%;
+		    font-weight: lighter;
+		    padding: 10px 5px;
+		}
+	</style>
+</head>
+<body>
+	<nav class="crumbs">
+    <ol>
+        <li class="crumb"><a href="bikes">Bikes</a></li>
+        <li class="crumb"><a href="bikes/bmx">BMX</a></li>
+        <li class="crumb">Jump Bike 3000</li>
+    </ol>
+</nav>
+
+<h1>Jump Bike 3000</h1>
+<p>This BMX bike is a solid step into the pro world. It looks as legit as it rides and is built to polish your skills.</p>
+
+</body>
+</html>

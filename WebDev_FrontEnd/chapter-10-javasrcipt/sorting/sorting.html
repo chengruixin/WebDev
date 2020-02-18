@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sort</title>
+</head>
+<body>
+<script type="text/javascript">
+	function printArray(arr,left,right){
+		var output = "[ ";
+		for(var i=left;i<=right;i++){
+			output += arr[i] + " ";
+		}
+		output += " ]";
+		console.log(output);
+	}
+	function swap(arr,a,b){
+		var temp = arr[a];
+		arr[a] = arr[b];
+		arr[b] = temp;
+		return arr;
+	}
+	function quickSort(arr,left,right) {
+		if(left>=right){
+			return arr;
+		}
+
+		else{
+			var pivot = array[right];
+			var current = left;
+			for(var i=left;i<=right;i++){
+				if(arr[i]<pivot){
+					swap(arr,i,current);
+					current++;
+				}
+			}
+
+			swap(arr,current,right);
+
+			// console.log("************p start***********");
+			// printArray(arr,left,current-1);
+			// console.log("Partition:" +arr[current]);
+			// printArray(arr,current+1,right);
+			// console.log("************p-end***********");
+			quickSort(arr,left,current-1);
+			quickSort(arr,current+1,right);
+			return arr;	
+		}
+		
+	}
+
+	function quick(arr,low,high){
+		if(low>=high){
+			return arr;
+		}
+		var wall = low;
+		var pivot = array[high];
+		for(var i=low;i<=high;i++){
+			if(arr[i]<pivot){
+				swap(arr,i,wall);
+				wall++;
+			}
+		}
+
+		swap(arr,wall,high);
+
+		quick(arr,low,wall-1);
+		quick(arr,wall+1,high);
+
+		return arr;
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Color Game</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="app.css">
+</head>
+<body>
+	
+	<div class="title">
+		<div class="container">
+			<p class="title_p">THE GREAT</p>
+			<h1 id="title_h">RGB(<span id="red"></span>, <span id="green"></span>, <span id="blue"></span>)</h1>
+			<P class="title_p">GUESSING GAME</P>
+		</div>
+		
+	</div>
+
+	<!-- <div class="dashboard">
+		<div class="container">
+			<span class="dsb-left">
+				<button class="button" id="newColors">NEW COLORS</button>
+			</span>
+			
+			<span id="message"></span>
+			<span class="dsb-right">
+				<button class="button" id="easy">EASY</button>
+				<button class="button" id="hard">HARD</button>
+			</span>
+			
+		</div>
+	</div> -->
+
+	<div class="dashboard">
+	
+		<button class="button" id="newColors">NEW COLORS</button>
+		<span id="message"></span>
+		<button class="button" id="easy">EASY</button>
+		<button class="button selected" id="hard">HARD</button>
+			
+		
+	</div>
+
+	<div class="main">
+		<div class="container" id="blockArea">
+			
+		</div>
+	</div>
+
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

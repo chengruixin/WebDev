@@ -1,0 +1,26 @@
+img	{
+	width: 100%;
+	
+	margin: 0 auto;
+}
+
+td	{
+	width: 33%;
+	
+	/*border: 5px dashed black;*/
+}
+
+
+table {
+	/*border: 10px solid black;*/
+	width: 95%;
+	padding: 1%;
+	margin: 10px auto;
+}
+
+h1 {
+	border-bottom: 1px rgba(200,200,200) solid;
+	width: 500px;
+	padding-bottom: 2%;
+	margin-left: 10px;
+}

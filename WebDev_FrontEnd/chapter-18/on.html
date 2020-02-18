@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>on click</title>
+	<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+	<style type="text/css">
+		.done {
+			text-decoration: line-through;
+		}
+	</style>
+</head>
+<body>
+	<p>afsdfjal</p>
+	<p>adflasdjf</p>
+	<p>dfaldsfkjasl;d</p>
+	<p>falsdj</p>
+
+	<script type="text/javascript">
+		/*
+			//vanilla verstion of javascript
+			var ps = document.getElementsByTagName("p");
+
+			for(var i =0;i<ps.length;i++){
+			    ps[i].addEventListener("mouseover",function(){
+			        this.style.fontWeight = "bold";
+			    });
+			}
+
+			for(var i =0;i<ps.length;i++){
+			    ps[i].addEventListener("mouseout",function(){
+			        this.style.fontWeight = "300";
+			    });
+			}			
+		*/
+
+		//jQuery version
+
+		// $("p").on("mouseenter",function(){
+		// 	$(this).css("fontWeight","bold");
+		// })
+
+		// $("p").on("mouseleave",function(){
+		// 	$(this).css("fontWeight","normal");
+		// })
+
+		//test:
+		// $("p").on("click",function(){
+		// 	$(this).toggleClass("done");
+		// });
+
+		$("p").click(function(){
+			$(this).toggleClass("done");
+		});
+		$("html")[0].innerHTML += "<p>third one</p>";
+	</script>
+</body>
+</html>

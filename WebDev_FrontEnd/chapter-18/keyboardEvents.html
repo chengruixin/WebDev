@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>keyboard events</title>
+	<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+	<style type="text/css">
+		#play {
+			width:50%;
+			margin: 0 auto;
+			border: 1px black solid;
+			font-size: 2rem;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="play">
+		
+	</div>
+
+	<div>
+		
+	</div>
+
+	<script type="text/javascript">
+		var A;//65
+		var B;//66
+		var seven;//55
+		var bracket;//221
+		$("html").keydown(function(event){
+			if(event.which === 65){
+				A = true;
+			}
+
+			if(event.which === 66){
+				B = true;
+			}
+
+			if(event.which === 55){
+				seven = true;
+			}
+
+			if(event.which === 221){
+				bracket = true;
+			}
+		});
+
+		$("html").keyup(function(event){
+			if(event.which === 65){
+				A = false;
+			}
+
+			if(event.which === 66){
+				B = false;
+			}
+
+			if(event.which === 55){
+				seven = false;
+			}
+
+			if(event.which === 221){
+				bracket = false;
+			}
+		});
+
+
+
+		// while(true){
+		// 	if(A === true && B === true && seven === true && bracket === true){
+		// 		console.log("play the video");
+		// 	}	
+
+		// 	document.write("current status:" + "A = "+A +"<br>B = "+B+"<br> seven = "+seven +"<br> bracket = "+bracket);
+		// }
+		var div = $("#play")[0];
+		setInterval(function(){
+			div.innerHTML = "A = "+A+"<br> B = "+B+"<br> seven = "+seven+ "<br> bracket = "+bracket;
+			if(A === true && B === true && seven === true && bracket === true){
+				$("div")[1].innerHTML = "video is playing";
+			}
+
+			else{
+				$("div")[1].innerHTML = "video is paused";
+			}
+		},1);
+
+
+		/*
+			window.addEventListener("keydown", function (event) {
+			  if (event.defaultPrevented) {
+			    return; // 如果事件已经在进行中，则不做任何事。
+			  }
+
+			  switch (event.key) {
+			    case "ArrowDown":
+			      // 按“↑”方向键时要做的事。
+			      break;
+			    case "ArrowUp":
+			      // 按“↓”方向键时要做的事。
+			      break;
+			    case "ArrowLeft":
+			      // 按“←”方向键时要做的事。
+			      break;
+			    case "ArrowRight":
+			      // 按“→”方向键时要做的事。
+			      break;
+			    case "Enter":
+			      // 按“回车”键时要做的事。
+			      break;
+			    case "Escape":
+			      // 按“ESC”键时要做的事。
+			      break;
+			    default:
+			      return; // 什么都没按就退出吧。
+			  }
+
+			  // 取消默认动作，从而避免处理两次。
+			  event.preventDefault();
+			}, true);		
+		*/
+	</script>
+</body>
+</html>

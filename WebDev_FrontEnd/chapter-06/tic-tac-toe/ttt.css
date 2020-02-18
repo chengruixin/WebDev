@@ -1,0 +1,29 @@
+td {
+	width: 100px;
+	height: 100px;
+}
+
+.left_right {
+	border-left: 3px solid black;
+	border-right: 3px solid black;
+}
+
+.top-bottom {
+	border-top: 3px solid black;
+	border-bottom: 3px solid black;
+}
+
+#middle {
+	border:3px solid black;
+}
+
+table{
+	margin: auto;
+}
+
+h1	{
+	text-align: center;
+	border: 3px solid blue;
+	/*width: 100%;*/
+	margin: 10px 5%;
+}

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Art Gallery</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<script src="http://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+	<style type="text/css">
+
+		.navbar {
+    		border-radius: 0;
+		}
+		.border-line {
+			border: 1.5px rgba(70,70,70,0.3) solid;
+			margin: 0;
+			padding: 3px;
+			border-radius: 5px;
+
+		}
+		.img {
+			width: 100%;
+			height: 400px;
+
+		}
+		.grid{
+			
+		}
+		.jumbotron {
+    		margin-top: 80px;
+    		background-color: #ecf0f1;
+		}
+
+
+		.navbar-color {
+			background: #2c3e50;
+		}
+
+		.font-color {
+			color: #2c3e50;
+		}
+
+		.jumbotron .h1, .jumbotron h1 {
+    		color: #2c3e50;
+    		font-weight: 550;
+		}
+
+		.navbar-inverse .navbar-brand {
+			font-weight: 500;
+    		color: white;
+		}
+		.navbar-inverse .navbar-nav > li > a {
+			font-weight: 500;
+    		color: white;
+		}
+
+		.capitalize {
+			text-transform: capitalize;
+		}
+	</style>
+
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-color navbar-fixed-top">
+		<div class="container">
+			
+			<div class="navbar-header navbar-font-color">
+
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+      			</button>
+
+				<a href="#" class="navbar-brand"><span class="glyphicon glyphicon-picture"></span> IMGS</a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="bs-nav-demo">
+				<ul class="nav navbar-nav">
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+
+
+				<div class="nav navbar-nav navbar-right">
+					<li><a href="#">Sign up</a></li>
+					<li><a href="#">Log in</a></li>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+
+	<div class="container">
+
+
+		<div class="jumbotron">
+			<h1 class="font-color"><span class="glyphicon glyphicon-film"></span> Xin xin's gallery</h1>
+			<p class="capitalize font-color">a bunch of beautiful images that are created by NINI</p>
+		</div>
+
+
+		<!-- <button type="button" class="btn btn-default" aria-label="Left Align">
+  			<span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+		</button>
+
+		<button type="button" class="btn btn-default btn-lg">
+		  <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star
+		</button> -->
+
+
+		<div class="row">
+			<div class="col-lg-4 col-sm-6 col-xs-12 grid">
+				<div class="thumbnail">
+
+				<img src="https://images.unsplash.com/photo-1442406964439-e46ab8eff7c4?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+				</div>
+			</div>
+			
+			<div class="col-lg-4 col-sm-6 col-xs-12 grid">
+				<div class="thumbnail">
+
+				<img src="https://images.unsplash.com/photo-1439694458393-78ecf14da7f9?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-sm-6 col-xs-12 grid">
+				<div class="thumbnail">
+
+				<img src="https://images.unsplash.com/photo-1444090542259-0af8fa96557e?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-sm-6 col-xs-12 grid">
+				<div class="thumbnail">
+
+				<img src="https://images.unsplash.com/photo-1442406964439-e46ab8eff7c4?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+				</div>
+			</div>
+			
+			<div class="col-lg-4 col-sm-6 col-xs-12 grid">
+				<div class="thumbnail">
+
+				<img src="https://images.unsplash.com/photo-1439694458393-78ecf14da7f9?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-sm-6 col-xs-12 grid">
+				<div class="thumbnail">
+
+				<img src="https://images.unsplash.com/photo-1444090542259-0af8fa96557e?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-sm-6 col-xs-12 grid">
+				<div class="thumbnail">
+
+				<img src="https://images.unsplash.com/photo-1442406964439-e46ab8eff7c4?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+				</div>
+			</div>
+			
+			<div class="col-lg-4 col-sm-6 col-xs-12 grid">
+				<div class="thumbnail">
+
+				<img src="https://images.unsplash.com/photo-1439694458393-78ecf14da7f9?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-sm-6 col-xs-12 grid">
+				<div class="thumbnail">
+
+				<img src="https://images.unsplash.com/photo-1444090542259-0af8fa96557e?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-sm-6 col-xs-12 grid">
+				<div class="thumbnail">
+
+				<img src="https://images.unsplash.com/photo-1442406964439-e46ab8eff7c4?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+				</div>
+			</div>
+			
+			<div class="col-lg-4 col-sm-6 col-xs-12 grid">
+				<div class="thumbnail">
+
+				<img src="https://images.unsplash.com/photo-1439694458393-78ecf14da7f9?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-sm-6 col-xs-12 grid">
+				<div class="thumbnail">
+
+				<img src="https://images.unsplash.com/photo-1444090542259-0af8fa96557e?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+				</div>
+			</div>
+
+		</div>
+
+		<!-- <div class="row">
+			<div class="col-lg-3 grid">
+				<div class="border-line">
+					<a href="1.jpg"><img class="img" src="1.jpg"></a>
+				</div>
+			</div>
+
+			<div class="col-lg-3 grid">
+				<div class="border-line">
+					<a href="2.jpeg"><img class="img" src="2.jpeg"></a>
+				</div>
+			</div>
+			<div class="col-lg-3 grid">
+				<div class="border-line">
+					<a href="3.jpg"><img class="img" src="3.jpg"></a>
+				</div>
+			</div>
+			<div class="col-lg-3 grid">
+				<div class="border-line">
+					<a href="4.jpeg"><img class="img" src="4.jpeg"></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			
+
+			<div class="col-lg-4 grid">
+				<div class="border-line">
+					<a href="6.jpeg"><img class="img" src="6.jpeg"></a>
+				</div>
+			</div>
+			<div class="col-lg-4 grid">
+				<div class="border-line">
+					<a href="7.jpeg"><img class="img" src="7.jpeg"></a>
+				</div>
+			</div>
+			<div class="col-lg-4 grid">
+				<div class="border-line">
+					<a href="1986910314.jpg"><img class="img" src="1986910314.jpg"></a>
+				</div>
+			</div>
+		</div> -->
+	</div>
+
+
+</body>
+</html>

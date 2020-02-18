@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MY nav bar</title>
+	<link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap.css">
+	<style type="text/css">
+		nav {
+			background:  gray;
+			/*border-top: 1px black solid;
+			border-bottom: 1px black solid;*/
+			padding: 25px 20px;
+			/*margin: 2%;*/
+		}
+
+		li {
+			list-style-type: none;
+    		padding-left: 0;
+    		display: inline-block;
+    		margin-right: 20px;
+		}
+
+		a {
+			color: rgb(200,200,200);
+			font-size: 2rem;
+		}
+
+		a:hover {
+			color: rgb(200,200,200);
+		}
+		
+		.head {
+			font-size: 3rem;
+			font-weight: 500;
+		}
+
+		.nav-bar {
+			/*border: 1px black solid;
+			background: #555;*/
+			width: 55%;
+			margin: 5px;
+			display: inline-block;
+			text-align: left;
+		}
+
+		.nav-right {
+			/*border: 1px black solid;
+			background: #252;*/
+			width: 20%;
+			margin: 5px 1% 5px 18%;
+			display: inline-block;
+			text-align: right;
+
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<nav>
+			
+			<div class="nav-bar">
+				<ul>
+					<li><a href="#" class="head">Company</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Staff</a></li>
+					<li><a href="#">Store</a></li>
+					<li><a href="#">Support</a></li>
+				</ul>
+			</div>
+			
+			<div class="nav-right">
+				<li><button class="btn btn-primary btn-lg">Login</button></li>
+				<li><button class="btn btn-primary btn-lg">Sign up</button></li>
+			</div>
+		</nav>
+	</div>
+	
+</body>
+</html>

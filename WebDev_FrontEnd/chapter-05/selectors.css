@@ -1,0 +1,59 @@
+/*element*/
+li{
+
+}
+
+/*class*/
+.hello {
+
+}
+
+/*id*/
+#name {
+
+}
+
+/*star*/
+/*it appies to all elements in html*/
+* {
+	
+}
+
+/*descendant selectors*/
+li a {
+	color: red;
+}
+
+/*adjacent selectors*/
+h4 + ul {
+
+}
+
+/*attribute selectors*/
+input[type="text"]{
+	
+}
+
+input{
+	
+	background: rgba(100,100,100);
+	border: 5px solid;
+}
+
+
+
+.special{
+	background: rgba(215,240,0,.8);
+	border: rgb(140,15,150) 5px dashed;
+}
+
+}
+
+/*Nth of type*/
+li:nth-of-type(3){
+	background: purple;
+}
+
+a:hover{
+	background: rgb(0,0,250,0.4);
+}

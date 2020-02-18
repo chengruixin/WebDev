@@ -1,0 +1,39 @@
+.main {
+	max-width: 800px;
+	width: 80%;
+	border: 20px #bdc3c7 solid;
+	margin: 20px auto;
+}
+
+.sub_blog {
+	width: 95%;
+	margin: 0 auto;
+	
+}
+
+.date {
+	text-transform: uppercase;
+	color: #3498db;
+	letter-spacing: 0.2em;
+}
+
+h1 {
+	color: #2c3e50;
+	text-transform: capitalize;
+	font-size:  2.0em;
+}
+
+p{
+	font-size: 1.2em;
+}
+hr {
+	
+	width: 95%;
+
+}
+
+.starting_p {
+	border-left: 5px #bdc3c7 solid;
+	padding-left: 5px;
+	font-size: 1.2em;
+}

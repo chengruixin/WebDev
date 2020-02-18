@@ -1,0 +1,14 @@
+p{
+	/*content:the element itself -- Width and Height*/
+	width: 50%;
+	
+	
+	/*border*/
+	border:3px dashed rgba(50,185,164,.5);
+
+	/*padding:*/
+	padding: 2%;
+
+	/*margin*/
+	margin: 20%;
+}

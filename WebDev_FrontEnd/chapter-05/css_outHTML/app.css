@@ -1,0 +1,35 @@
+/*h1	{
+	color: red;
+}
+
+li	{
+	color: green;
+
+}
+
+h4	{
+	color: purple;
+}*/
+
+
+/*border: width,color,style*/
+
+h1	{
+	/*color: #e000e0;*/
+	color: rgb(250,150,80);
+	/*color: rgba(100,100,0,.5);*/
+
+	background: rgb(0,50,150,0.4);
+
+	border-color: rgb(100,125,50);
+	border-width: 15px;
+	border-style: solid;
+
+
+	/*border:  solid  10px  #909efe;*/
+}
+
+body{
+	background: rgb(255,189,69);
+	/*background: url(http://i0.hdslb.com/bfs/article/bc135e91e7c18d6f94fb77c5cea7f7904a008c33.jpg);*/
+}

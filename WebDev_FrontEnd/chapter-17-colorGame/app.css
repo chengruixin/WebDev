@@ -1,0 +1,104 @@
+body {
+	margin: 0;
+}
+
+.title{
+	width: 100%;
+	/*border: 1px solid black;*/
+	margin: 
+	font-weight: normal;
+	color: white;
+	text-align: center;
+	padding: 2%;
+}
+
+.title_p {
+	font-size: 2em;
+	margin: 0;
+	padding: 0;
+
+}
+
+#title_h {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	line-height: 1.1;
+	font-size: 4em;
+
+}
+
+
+.dashboard {
+	background: rgb(240,240,240);
+	text-align: center;
+	height: 30px;
+}
+
+.main {
+	border: 1px solid black;
+	height: 800px;
+	width: 100%;
+	background: rgb(30,30,30);
+	padding: 20px 0;
+}
+
+.colorBlock {
+	
+	width: 30%;
+	margin: 1.66%;
+	padding-bottom: 30%;
+	float: left;
+	border-radius: 50px;
+	background: white;
+	transition: background 0.6s;
+	-webkit-transition: background 0.6s;
+	-moz-transition: background 0.6s;
+}
+
+
+
+#message {
+	/*padding-left: 30%;
+
+	text-align: center;*/
+	font-weight: 500;
+	display: inline-block;
+	width: 20%;
+	font-size: 1.8rem;
+}
+
+.wrongGuess {
+	background: rgb(30,30,30);
+
+}
+
+.container {
+	max-width: 700px;
+}
+
+
+.button {
+	border: 0;
+	background: rgb(240,240,240);
+	text-transform: uppercase;
+	height: 100%;
+	color: steelblue;
+	font-weight: 700;
+	font-size: 2rem;
+	letter-spacing: 1px;
+	transition: all 0.3s;
+	outline: none;
+}
+
+#message {
+	display: inline-block;
+}
+.button:hover {
+	color: white;
+	background: steelblue;
+}
+
+.selected {
+	background: steelblue;
+	color: white;
+}

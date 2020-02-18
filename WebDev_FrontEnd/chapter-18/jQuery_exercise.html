@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>exercise</title>
+	<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div>Div 1</div>
+	<div class="highlight">Div 2</div>
+	<div id="third">Div 3</div>
+	<div class="highlight">Div 4</div>
+
+	<script type="text/javascript">
+		$("div").css("background","purple");
+		$("div.highlight").css("width","200px");
+		$("#third").css("border","1px solid orange");
+		var number = 2;
+		$("div:nth-of-type("+number+")").css("color","white");
+	</script>
+</body>
+</html>
