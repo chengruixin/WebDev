@@ -1,0 +1,22 @@
+
+<%- include('partials/header') -%>
+
+
+
+<% blogs.forEach(function(blog){ %>
+    <div style="margin-top: 50px; margin-left: 50px;">
+        <h2><%= blog.title%></h2> 
+        
+        <img class="blog_image" src="<%= blog.image%>" alt="Blog Image">
+        <p><%- blog.body.substring(0,100)%>...</p> 
+        <h6><%= blog.created.getHours()+ ": " + blog.created.getMinutes()+ " " +blog.created.toDateString()%></p> 
+        <a class="ui blue small basic button" href="/blogs/<%= blog._id %>">Show More</a>   
+        <a class="ui yellow small basic button" href="/blogs/<%= blog._id %>/edit">Edit</a>
+        <form style="display: inline;" action="/blogs/<%= blog._id %>?_method=DELETE" method="POST">
+            <button class="ui red small basic button">DELETE</button>
+        </form>
+    </div>
+    
+<%}) %>
+
+<%- include('partials/footer') -%>

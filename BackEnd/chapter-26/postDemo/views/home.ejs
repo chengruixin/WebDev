@@ -1,0 +1,61 @@
+<%- include ("partials/header") %>
+
+
+<div class="contianer">
+    <h3>Welcome to the homepage</h3>
+
+    <!-- here to show all posts from database-->
+    <div class="postedPosts">
+        <% posts.forEach(function(post){ %>
+            <div class="singlePost">
+           <p class="title"><%= post.title%></p> 
+           <p class="content"><%= post.content%></p> 
+            </div>
+        <%}) %>
+
+
+    </div>
+    
+    
+    
+    <div id="postBox">
+        <form action="/uploadPost" method="POST">
+            <div>
+                <label>Title
+                    <input  class="full-width input-style" style = " height: 25px;" type="text" name="postTitle" placeholder="Give it a title">
+                </label>
+            </div>
+            <div>
+                <label>Content
+                    <textarea class="full-width input-style" name="postContent" cols="10" rows="5"></textarea>
+                </label>
+            </div>
+            
+            <button>submit</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    
+
+    $(".postedPosts").on("dblclick",".singlePost",function(event){
+        //alert("you clicked");
+        var title = this.querySelector(".title").textContent.toString();
+        var content = this.querySelector(".content").textContent.toString();
+        //console.log(title);
+        //console.log(content);
+
+        const url = "/deletePost";
+        $.post(url, {title:title, content:content},function(){
+            location.reload();
+        });
+
+        event.stopPropagation();
+        $(this).remove();
+	});
+
+	
+
+</script>
+<%- include ("partials/footer") %>

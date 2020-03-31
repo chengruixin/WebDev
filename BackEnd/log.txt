@@ -1,0 +1,15 @@
+node.j
+
+npm install(kind of like create a new object)
+
+express (.get .post .listen req.body["?"] req.query["?"] res.send("") res.render("") routeparams: .params[""])
+
+API: get json file, parse string of json file to an object,require("request"), request(url,function(error,body,response(.statusCode)){})
+
+database
+
+restful routing
+
+data association
+
+authentication
