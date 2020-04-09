@@ -3,7 +3,7 @@
 <div style="margin-top: 50px; margin-left: 50px;">
     <h2><%= blog.title%></h2> 
     <img class="blog_image" src="<%= blog.image%>" alt="Blog Image">
-    <p><%- blog.body%></p> 
+    <p><%= blog.body%></p> 
     <h6><%= blog.created.getHours()+ ": " + blog.created.getMinutes()+ " " +blog.created.toDateString()%></p> 
     <a href="/blogs">Back</a>   
 </div>
